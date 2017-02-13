@@ -1,4 +1,4 @@
- # Distributed Systems Algorithm 
+# Distributed Systems Algorithm 
 
 ## Broadcast No ACK
 
