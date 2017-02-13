@@ -1,0 +1,9 @@
+#!/bin/bash
+
+urxvt -title "Noeud 115" -e  ssh "$1"@129.194.184.115 "java Broadcast 8080 voisin-115.txt WAIT;" &
+urxvt -title "Noeud 117" -e  ssh "$1"@129.194.184.117 "java Broadcast 8080 voisin-117.txt WAIT;" &
+urxvt -title "Noeud 118" -e  ssh "$1"@129.194.184.118 "java Broadcast 8080 voisin-118.txt WAIT;" &
+urxvt -title "Noeud 114" -e  ssh "$1"@129.194.184.114 "java Broadcast 8080 voisin-114.txt WAIT;" &
+urxvt -title "Noeud 112" -e  ssh "$1"@129.194.184.112 "java Broadcast 8080 voisin-112.txt WAIT;" &
+sleep 2
+urxvt -title "Noeud 116" -e  ssh "$1"@129.194.184.116 "java Broadcast 8080 voisin-116.txt INIT;" &
